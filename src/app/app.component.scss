@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .inner {
+    flex-basis: 100%;
+    flex-grow: 1;
+    text-align: center;
+
+    &:nth-child(3) {
+      display: flex;
+      justify-content: center;
+      margin-top: var(--margin-xl);
+
+      .imageContainer {
+        width: 500px;
+      }
+
+      .buttons {
+        margin-left: 1rem;
+
+        .file-input {
+          display: none;
+        }
+
+        .file-upload {
+          display: flex;
+          align-items: center;
+
+          button {
+            margin-left: var(--margin-sm);
+          }
+        }
+      }
+    }
+  }
+
+  h1,
+  h2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--margin-xl);
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: var(--margin-xxs);
+  }
+
+  p {
+    text-align: center;
+  }
+}
